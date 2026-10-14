@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>The Str Spa | 全直男Spa · 官方線上預約系統</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Custom Dark Tech Sport CSS -->
+  <link rel="stylesheet" href="static/css/style.css?v=20261014_01">
+</head>
+<body class="antialiased pb-24">
+
+  <!-- 頂部品牌導航欄 -->
+  <header class="sticky top-0 z-40 bg-[#070a12]/90 backdrop-blur-md border-b border-white/10 px-4 py-3">
+    <div class="max-w-5xl mx-auto flex items-center justify-between">
+        <div>
+          <h1 class="text-base md:text-lg font-black tracking-wider text-white">THE STR SPA</h1>
+          <p class="text-[10px] text-amber-400 font-semibold tracking-widest">全直男體育生 · 極致隱私釋壓</p>
+        </div>
+      <div class="flex items-center gap-2">
+        <a href="#booking-section" class="text-xs px-3 py-1.5 rounded-lg bg-blue-600 hover:bg-blue-500 text-white font-bold transition-all shadow-md shadow-blue-600/30">
+          <i class="fas fa-calendar-check mr-1"></i> 線上預約
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- 跑馬燈公告列 -->
+  <div class="bg-blue-950/40 border-b border-blue-500/20 py-2 px-4">
+    <div class="max-w-5xl mx-auto flex items-center gap-2 text-[11px] text-blue-200">
+      <span class="bg-blue-500/20 text-blue-300 px-2 py-0.5 rounded text-[10px] font-bold whitespace-nowrap">
+        <i class="fas fa-bullhorn mr-1"></i> 公告
+      </span>
+      <marquee scrollamount="4" class="tracking-wide">
+        全預約制 · 100% 全直男體育選手師傅 · 台北西門/台中工作室加成環境升級 · 預約請預付 500 元訂金保留檔期 · 外出到府服務歡迎提早預約
+      </marquee>
+    </div>
+  </div>
+
+  <main class="max-w-5xl mx-auto px-4 py-6 space-y-10">
+
+    <!-- 品牌 Hero 特色 -->
+    <section class="text-center py-6">
+      <div class="inline-block px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-bold tracking-widest mb-3">
+        ATHLETIC RECOVERY & MASSAGE
+      </div>
+      <h2 class="text-2xl md:text-3xl font-extrabold text-white tracking-wider mb-2">
+        深層指壓 · 溫熱精油 · 頂級直男體育生
+      </h2>
+    </section>
+
+    <!-- ════════════════════════════════════════════════════════════
+         SECTION 1：WonderSpa 風格 師傅形象牆 (Master Gallery)
+         ════════════════════════════════════════════════════════════ -->
+    <section id="gallery-section" class="space-y-4">
+      <div class="flex items-center justify-between">
+        <div>
+          <h3 class="text-lg font-bold text-white tracking-wide flex items-center gap-2">
+            <span class="w-2 h-5 rounded-full bg-blue-500 inline-block"></span>
+            師傅形象牆 MASTER GALLERY
+          </h3>
+          <p class="text-xs text-gray-400 mt-0.5">點擊圖片放大檢視相簿 · 點擊按鈕直接預約</p>
+        </div>
+      </div>
+
+      <!-- 地區切換 Tabs -->
+      <div class="flex gap-2 overflow-x-auto pb-1" id="region-tabs">
+        <button onclick="filterRegion('全部')" class="region-btn active px-4 py-1.5 rounded-full text-xs font-bold bg-blue-600 text-white transition-all shadow-sm">全部師傅</button>
+        <button onclick="filterRegion('台北/桃園')" class="region-btn px-4 py-1.5 rounded-full text-xs font-bold bg-slate-800 text-gray-300 hover:bg-slate-700 transition-all">台北/桃園</button>
+        <button onclick="filterRegion('台中')" class="region-btn px-4 py-1.5 rounded-full text-xs font-bold bg-slate-800 text-gray-300 hover:bg-slate-700 transition-all">台中</button>
+        <button onclick="filterRegion('高雄')" class="region-btn px-4 py-1.5 rounded-full text-xs font-bold bg-slate-800 text-gray-300 hover:bg-slate-700 transition-all">高雄</button>
+      </div>
+
+      <!-- 師傅卡片容器 -->
+      <div id="masters-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
+        <!-- 由 JS 動態注入 -->
+      </div>
+    </section>
+
+
+    <!-- ════════════════════════════════════════════════════════════
+         SECTION 2：Muscle.com.tw 筋棧 3-STEP 預約排程系統
+         ════════════════════════════════════════════════════════════ -->
+    <section id="booking-section" class="pt-6">
+      <div class="glass-card p-6 md:p-8 space-y-6 max-w-2xl mx-auto border border-blue-500/20">
+
+        <!-- 步驟進度條 (1) - (2) - (3) -->
+        <div class="flex items-center justify-between px-6 border-b border-white/10 pb-5">
+          <div class="flex flex-col items-center gap-1.5">
+            <div id="step-node-1" class="step-node current">1</div>
+            <span class="text-[11px] font-bold text-blue-400">挑選師傅</span>
+          </div>
+          <div class="flex-1 h-[2px] bg-white/10 mx-3"></div>
+          <div class="flex flex-col items-center gap-1.5">
+            <div id="step-node-2" class="step-node pending">2</div>
+            <span class="text-[11px] font-bold text-gray-400">選擇時間</span>
+          </div>
+          <div class="flex-1 h-[2px] bg-white/10 mx-3"></div>
+          <div class="flex flex-col items-center gap-1.5">
+            <div id="step-node-3" class="step-node pending">3</div>
+            <span class="text-[11px] font-bold text-gray-400">確認送出</span>
+          </div>
+        </div>
+
+        <!-- 步驟 1：挑選師傅與地點服務 -->
+        <div id="step-content-1" class="space-y-5">
+          <h4 class="text-base font-bold text-white tracking-wide flex items-center gap-2">
+            <i class="fas fa-user-check text-blue-400"></i> 第一步：確認指定師傅與服務
+          </h4>
+
+          <div>
+            <label class="block text-xs font-bold text-gray-400 mb-1.5">指定師傅 MASTER</label>
+            <select id="booking-master-select" onchange="onMasterSelected()" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-blue-500">
+              <option value="" disabled selected>請選擇師傅</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold text-gray-400 mb-1.5">服務項目 SERVICE</label>
+            <div class="bg-slate-900 border border-slate-700 rounded-xl p-3.5 space-y-2">
+              <div class="flex justify-between items-center">
+                <span class="text-sm font-bold text-white">運動指壓 + 精油油壓 100分鐘</span>
+                <span class="text-sm font-bold text-amber-400">NT$ 2,800</span>
+              </div>
+              <p class="text-[11px] text-gray-400">深層肌肉筋膜釋壓 50min + 溫熱植物精油舒緩 50min</p>
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold text-gray-400 mb-1.5">加時加成 ADD-ON</label>
+            <label class="flex items-center justify-between bg-slate-900 border border-slate-700 rounded-xl p-3 cursor-pointer hover:border-slate-600 transition-all">
+              <div class="flex items-center gap-2.5">
+                <input type="checkbox" id="addon-time" onchange="calculatePrice()" class="w-4 h-4 text-blue-600 rounded bg-slate-800 border-slate-600">
+                <span class="text-xs font-bold text-gray-200">延長服務 30 分鐘 (+30min)</span>
+              </div>
+              <span class="text-xs font-bold text-gray-300">+NT$ 600</span>
+            </label>
+          </div>
+
+          <button type="button" onclick="goToStep(2)" class="w-full py-3.5 rounded-xl bg-blue-600 hover:bg-blue-500 active:scale-95 text-white font-bold text-sm tracking-wider transition-all shadow-lg shadow-blue-600/30 flex items-center justify-center gap-2 cursor-pointer">
+            <span>下一步 · 選擇時間與地點</span>
+            <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+
+
+        <!-- 步驟 2：選擇時間（對照 Muscle.com.tw 圖片 1 ＆ 2） -->
+        <div id="step-content-2" class="hidden space-y-6">
+          <div class="flex justify-between items-center">
+            <h4 class="text-base font-bold text-white tracking-wide flex items-center gap-2">
+              <i class="fas fa-clock text-blue-400"></i> 選擇時間
+            </h4>
+            <span id="selected-service-badge" class="text-xs bg-slate-800 text-blue-300 border border-blue-500/30 px-3 py-1 rounded-full font-bold">
+              100分鐘 · NT$ 3,200
+            </span>
+          </div>
+
+          <!-- 日期選擇器條列 -->
+          <div class="bg-slate-900/80 p-3 rounded-2xl border border-slate-800 space-y-2">
+            <div class="flex justify-between items-center px-2">
+              <span class="text-xs font-bold text-gray-400" id="current-month-text">2026年 9月</span>
+              <span class="text-[11px] text-blue-400 font-bold">每日全時段開放預約</span>
+            </div>
+            <!-- 日期快選按鈕 -->
+            <div class="flex gap-2 overflow-x-auto pb-1" id="date-scroll-list">
+              <!-- 由 JS 產生 7~14 天 -->
+            </div>
+          </div>
+
+          <!-- 時間軸網格 (Timeline Hour Slots Grid) -->
+          <div>
+            <div class="flex justify-between items-center mb-2 px-1">
+              <span class="text-xs font-bold text-gray-400">時段空檔 (可選)</span>
+              <span class="text-[10px] text-blue-400 font-semibold">所有時段皆可預約</span>
+            </div>
+            <div id="slots-grid-container" class="grid grid-cols-2 sm:grid-cols-3 gap-2.5">
+              <!-- 由 JS 動態注入該師傅當天開放時段 -->
+            </div>
+            <p class="text-[10px] text-gray-400 mt-2 text-center">
+              <i class="fas fa-info-circle mr-1 text-blue-400"></i> 點擊時段 · 時長 <span id="summary-duration-text">100</span> 分鐘 · 最早 30 分鐘後可接單
+            </p>
+          </div>
+
+          <!-- 服務地點選擇與外出地址 -->
+          <div class="space-y-2.5 pt-2 border-t border-white/10">
+            <label class="block text-xs font-bold text-gray-300">
+              <i class="fas fa-map-marker-alt text-blue-400 mr-1"></i> 服務地點 LOCATION *
+            </label>
+            <div class="space-y-2">
+              <label class="flex items-center justify-between bg-slate-900 border border-slate-700 rounded-xl p-3 cursor-pointer hover:border-slate-600 transition-all">
+                <div class="flex items-center gap-2.5">
+                  <input type="radio" name="location-type" value="西門工作室" checked onchange="onLocationChange()" class="w-4 h-4 text-blue-600">
+                  <div>
+                    <span class="text-xs font-bold text-white">台北西門工作室</span>
+                    <p class="text-[10px] text-gray-400">萬華區峨眉街82號附近 · 清潔費 +$400</p>
+                  </div>
+                </div>
+                <span class="text-xs font-bold text-amber-400">+NT$ 400</span>
+              </label>
+
+              <label class="flex items-center justify-between bg-slate-900 border border-slate-700 rounded-xl p-3 cursor-pointer hover:border-slate-600 transition-all">
+                <div class="flex items-center gap-2.5">
+                  <input type="radio" name="location-type" value="台中工作室" onchange="onLocationChange()" class="w-4 h-4 text-blue-600">
+                  <div>
+                    <span class="text-xs font-bold text-white">台中工作室</span>
+                    <p class="text-[10px] text-gray-400">台中市中心精選工作室 · 清潔費 +$300</p>
+                  </div>
+                </div>
+                <span class="text-xs font-bold text-amber-400">+NT$ 300</span>
+              </label>
+
+              <label class="flex items-center justify-between bg-slate-900 border border-slate-700 rounded-xl p-3 cursor-pointer hover:border-slate-600 transition-all">
+                <div class="flex items-center gap-2.5">
+                  <input type="radio" name="location-type" value="外出到府" onchange="onLocationChange()" class="w-4 h-4 text-blue-600">
+                  <div>
+                    <span class="text-xs font-bold text-white">外出服務 (住家 / 飯店)</span>
+                    <p class="text-[10px] text-gray-400">西門捷運站起算 >7km 每公里 $100</p>
+                  </div>
+                </div>
+                <span class="text-xs font-bold text-gray-400">車馬費另計</span>
+              </label>
+            </div>
+
+            <!-- 外出詳細地址填寫框 -->
+            <div id="custom-address-box" class="hidden mt-2">
+              <label class="block text-[11px] font-bold text-blue-400 mb-1">
+                <i class="fas fa-home mr-1"></i> 請填寫完整外出地址（住家或飯店房號）*
+              </label>
+              <input type="text" id="custom-address-input" oninput="buildPreviewText()" placeholder="如：板橋區文化路一段100號 或 喜來登飯店808房" class="w-full bg-slate-950 border border-blue-500 rounded-xl px-4 py-2.5 text-xs text-white focus:outline-none focus:ring-1 focus:ring-blue-400">
+            </div>
+          </div>
+
+          <!-- 顧客稱呼與備註需求填寫 -->
+          <div class="space-y-3 pt-2 border-t border-white/10">
+            <div>
+              <label class="block text-[11px] font-bold text-gray-400 mb-1">貴賓稱呼（選填）</label>
+              <input type="text" id="cust-name" oninput="buildPreviewText()" placeholder="如：林先生 / Kevin（方便師傅稱呼您）" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-3.5 py-2.5 text-xs text-white focus:outline-none focus:border-blue-500">
+            </div>
+            <div>
+              <label class="block text-[11px] font-bold text-gray-400 mb-1">備註需求（選填）</label>
+              <input type="text" id="cust-notes" oninput="buildPreviewText()" placeholder="如：特別加強肩頸、水溫喜好、力道偏重等（若無可留空）" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-3.5 py-2.5 text-xs text-white focus:outline-none focus:border-blue-500">
+            </div>
+          </div>
+
+          <!-- 預約摘要小卡 (對照圖片 2) -->
+          <div class="bg-slate-900/90 rounded-2xl p-4 border border-slate-800 space-y-2 text-xs">
+            <div class="text-xs font-bold text-white mb-1 flex items-center gap-1.5">
+              <i class="fas fa-file-invoice text-blue-400"></i> 預約摘要
+            </div>
+            <div class="flex justify-between text-gray-300">
+              <span><i class="fas fa-sparkles text-amber-400 mr-1"></i> 服務</span>
+              <span id="sum-service-name" class="font-bold text-white">運動按摩指油壓</span>
+            </div>
+            <div class="flex justify-between text-gray-300">
+              <span><i class="far fa-clock text-blue-400 mr-1"></i> 時長</span>
+              <span id="sum-duration" class="font-bold text-white">100 分鐘</span>
+            </div>
+            <div class="flex justify-between text-gray-300">
+              <span><i class="far fa-calendar text-blue-400 mr-1"></i> 時間</span>
+              <span id="sum-datetime" class="font-bold text-amber-400">請於上方點選時段</span>
+            </div>
+            <div class="flex justify-between text-gray-300 pt-2 border-t border-white/5 text-sm font-bold">
+              <span>預估金額</span>
+              <span id="sum-total-price" class="text-amber-400">NT$ 3,200</span>
+            </div>
+          </div>
+
+          <!-- 按鈕列：上一步 / 下一步 -->
+          <div class="flex gap-3">
+            <button type="button" onclick="goToStep(1)" class="flex-1 py-3.5 rounded-xl bg-slate-800 hover:bg-slate-700 active:scale-95 text-gray-300 font-bold text-xs transition-all cursor-pointer">
+              <i class="fas fa-arrow-left mr-1"></i> 上一步
+            </button>
+            <button type="button" id="btn-goto-step-3" onclick="goToStep(3)" class="flex-[2] py-3.5 rounded-xl bg-blue-600 hover:bg-blue-500 active:scale-95 text-white font-bold text-xs tracking-wider transition-all shadow-lg shadow-blue-600/30 flex items-center justify-center gap-2 cursor-pointer">
+              <span>下一步 · 確認送出</span>
+              <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+
+        <!-- 步驟 3：確認訂單 ＆ LINE送出 -->
+        <div id="step-content-3" class="hidden space-y-4">
+          <h4 class="text-base font-bold text-white tracking-wide flex items-center gap-2">
+            <i class="fas fa-clipboard-check text-blue-400"></i> 確認訂單 · LINE 送出
+          </h4>
+
+          <!-- 綠色 LINE 送出大按鈕 -->
+          <div>
+            <a id="btn-line-dispatch-main" href="#" onclick="submitBookingToLine(event)" class="w-full py-4 rounded-2xl btn-line-dispatch text-base font-black tracking-widest flex items-center justify-center gap-2 text-white no-underline shadow-xl shadow-emerald-600/40">
+              <i class="fab fa-line text-2xl"></i>
+              <span>確認訂單 · LINE 送出</span>
+            </a>
+          </div>
+
+          <!-- 若沒有跳轉直接複製框 (對照用戶指定) -->
+          <div class="bg-slate-900 border border-emerald-500/40 rounded-2xl p-4 space-y-2.5">
+            <div class="flex items-center justify-between border-b border-white/10 pb-2">
+              <span class="text-xs font-bold text-amber-300 flex items-center gap-1.5">
+                <i class="fas fa-info-circle text-amber-400"></i> 若沒有跳轉請直接複製以下：
+              </span>
+              <button onclick="copyPreviewText()" class="text-xs bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-3 py-1.5 rounded-lg flex items-center gap-1 shadow-md shadow-emerald-600/30 transition-all">
+                <i class="far fa-copy"></i> 一鍵複製
+              </button>
+            </div>
+            
+            <pre id="booking-preview-text" class="text-xs text-gray-100 font-mono whitespace-pre-wrap leading-relaxed bg-black/70 p-3.5 rounded-xl border border-white/10 select-all"></pre>
+
+            <p class="text-[11px] text-gray-400 leading-relaxed text-center">
+              💡 複製後，請直接在 LINE 聊天室中 <span class="text-amber-300 font-bold">「貼上」並發送</span>，小幫手將即刻為您確認！
+            </p>
+          </div>
+
+          <!-- 成功複製 Toast 提示 -->
+          <div id="copy-toast" class="hidden bg-emerald-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl text-center shadow-lg">
+            <i class="fas fa-check-circle mr-1"></i> 已成功複製預約內容！請直接在 LINE 聊天室貼上送出。
+          </div>
+
+          <!-- 警告提示盒 -->
+          <div class="bg-amber-950/30 border border-amber-500/30 rounded-xl p-3 text-center space-y-1">
+            <p class="text-xs text-amber-300/90 font-medium">
+              送出後 <span class="bg-amber-500/20 px-1.5 py-0.5 rounded text-amber-300 font-bold">請等待小幫手回覆</span> 並完成 500 元訂金確認
+            </p>
+          </div>
+
+          <!-- 按鈕列：返回修改 -->
+          <div class="pt-1">
+            <button onclick="goToStep(2)" class="w-full py-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-gray-300 font-bold text-xs transition-all">
+              <i class="fas fa-arrow-left mr-1"></i> 返回修改資料
+            </button>
+          </div>
+
+          <!-- 預約摘要小卡 (底部) -->
+          <div class="bg-slate-900/60 rounded-2xl p-4 border border-slate-800/80 space-y-2 text-xs">
+            <div class="flex justify-between text-gray-300">
+              <span>✨ 服務</span>
+              <span id="final-sum-service" class="font-bold text-white">運動按摩指油壓</span>
+            </div>
+            <div class="flex justify-between text-gray-300">
+              <span>⏱️ 時長</span>
+              <span id="final-sum-duration" class="font-bold text-white">100 分鐘</span>
+            </div>
+            <div class="flex justify-between text-gray-300">
+              <span>📅 時間</span>
+              <span id="final-sum-datetime" class="font-bold text-amber-400">2026-09-24 21:00</span>
+            </div>
+            <div class="flex justify-between text-gray-300 pt-1.5 border-t border-white/5 font-bold">
+              <span>預估金額</span>
+              <span id="final-sum-price" class="text-amber-400">NT$ 3,200</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ════════════════════════════════════════════════════════════
+       MODALS：大圖燈箱 (Lightbox)、評價 (Review)、匯款後五碼
+       ════════════════════════════════════════════════════════════ -->
+
+  <!-- 1. Lightbox 燈箱 Modal -->
+  <div id="lightbox-modal" class="hidden fixed inset-0 z-50 bg-black/95 backdrop-blur-md flex flex-col justify-between p-4">
+    <div class="flex justify-end pt-2 pr-2">
+      <button onclick="closeLightbox()" class="w-10 h-10 rounded-full bg-white/10 text-white flex items-center justify-center text-lg hover:bg-white/20">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    <div id="lightbox-img-container" class="flex-1 flex items-center justify-center overflow-hidden">
+      <img id="lightbox-img" src="" class="max-h-[80vh] max-w-full object-contain rounded-xl shadow-2xl">
+    </div>
+    <div class="flex justify-center items-center gap-2 pb-6" id="lightbox-dots"></div>
+  </div>
+
+  <!-- 2. Review 顧客真實評價 Modal (WonderSpa Style) -->
+  <div id="review-modal" class="hidden fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-slate-900 border border-slate-700 w-full max-w-md rounded-2xl p-6 shadow-2xl space-y-4 max-h-[85vh] flex flex-col">
+      <div class="flex justify-between items-center border-b border-white/10 pb-3">
+        <div>
+          <h3 class="text-base font-bold text-white flex items-center gap-2">
+            <span id="review-modal-master-name">Jay</span> 師傅顧客評價
+          </h3>
+          <p id="review-modal-score" class="text-xs text-amber-400 mt-0.5">⭐ 9.9 滿分推薦</p>
+        </div>
+        <button onclick="closeReviewModal()" class="w-8 h-8 rounded-full bg-white/10 text-gray-400 hover:text-white flex items-center justify-center">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div id="review-list-container" class="flex-1 overflow-y-auto space-y-3 pr-1">
+        <!-- 由 JS 動態注入評價清單 -->
+      </div>
+    </div>
+  </div>
+
+
+  <!-- 4. LINE 跳轉提示彈窗 -->
+  <div id="line-redirect-modal" class="hidden fixed inset-0 z-50 bg-black/85 backdrop-blur-md flex items-center justify-center p-4">
+    <div class="bg-slate-900 border border-emerald-500/40 w-full max-w-sm rounded-2xl p-6 shadow-2xl space-y-4 text-center">
+      <div class="w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center mx-auto text-xl">
+        <i class="fab fa-line"></i>
+      </div>
+      <h3 class="text-base font-bold text-white">預約已生成！即刻開啟 LINE</h3>
+      <p class="text-xs text-gray-300 leading-relaxed">
+        系統已為您備妥預約內容並複製！若手機未自動開啟 LINE 聊天室，請點擊下方按鈕前往：
+      </p>
+      <div class="space-y-2 pt-2">
+        <a id="btn-open-line-url" href="#" target="_blank" class="block w-full py-3 rounded-xl btn-line-dispatch text-xs font-black tracking-widest">
+          立即開啟 LINE 聊天室發送
+        </a>
+        <button onclick="closeLineRedirectModal()" class="w-full py-2 rounded-xl bg-slate-800 text-gray-400 text-xs">
+          返回網站
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 底部版權宣告 -->
+  <footer class="text-center text-xs text-gray-400 py-6 border-t border-white/5 space-y-1">
+    <p>© 2026 The Str Spa | 全直男Spa · 營業時間 11:00 - 02:00</p>
+    <p class="text-[10px] text-gray-400">台北西門工作室 · 台中工作室 · 雙北/台中/高雄外出服務</p>
+  </footer>
+
+  <!-- Frontend Logic -->
+  <script src="static/js/customer.js?v=20261014_01"></script>
+</body>
+</html>

@@ -1,0 +1,691 @@
+[
+  {
+    "id": "tp_ae",
+    "name": "AE",
+    "region": "台北/桃園",
+    "regions": [
+      "台北",
+      "桃園"
+    ],
+    "height": 180,
+    "weight": 76,
+    "age": 27,
+    "specialty": "體育生專精 / 運動深層指油壓",
+    "bio": "AE 師傅具備紮實體育運動背景，體態勻稱結實，手法剛柔並濟，擅長深層筋膜撥筋與經絡穴位放鬆。",
+    "tags": [
+      "體育生",
+      "深層指壓",
+      "溫熱油壓",
+      "手法到位"
+    ],
+    "rating": 9.9,
+    "review_count": 50,
+    "photos": [
+      "static/masters/taipei/AE.jpg"
+    ]
+  },
+  {
+    "id": "tp_allen",
+    "name": "Allen",
+    "region": "台北/桃園",
+    "regions": [
+      "台北",
+      "桃園"
+    ],
+    "height": 180,
+    "weight": 76,
+    "age": 27,
+    "specialty": "體育生專精 / 運動深層指油壓",
+    "bio": "Allen 師傅具備紮實體育運動背景，體態勻稱結實，手法剛柔並濟，擅長深層筋膜撥筋與經絡穴位放鬆。",
+    "tags": [
+      "體育生",
+      "深層指壓",
+      "溫熱油壓",
+      "手法到位"
+    ],
+    "rating": 9.9,
+    "review_count": 42,
+    "photos": [
+      "static/masters/taipei/Allen.jpeg"
+    ]
+  },
+  {
+    "id": "tp_cr",
+    "name": "CR",
+    "region": "台北/桃園",
+    "regions": [
+      "台北",
+      "桃園"
+    ],
+    "height": 180,
+    "weight": 76,
+    "age": 27,
+    "specialty": "體育生專精 / 運動深層指油壓",
+    "bio": "CR 師傅具備紮實體育運動背景，體態勻稱結實，手法剛柔並濟，擅長深層筋膜撥筋與經絡穴位放鬆。",
+    "tags": [
+      "體育生",
+      "深層指壓",
+      "溫熱油壓",
+      "手法到位"
+    ],
+    "rating": 9.9,
+    "review_count": 48,
+    "photos": [
+      "static/masters/taipei/CR.JPG"
+    ]
+  },
+  {
+    "id": "tp_cv",
+    "name": "CV",
+    "region": "台北/桃園",
+    "regions": [
+      "台北",
+      "桃園"
+    ],
+    "height": 180,
+    "weight": 76,
+    "age": 27,
+    "specialty": "體育生專精 / 運動深層指油壓",
+    "bio": "CV 師傅具備紮實體育運動背景，體態勻稱結實，手法剛柔並濟，擅長深層筋膜撥筋與經絡穴位放鬆。",
+    "tags": [
+      "體育生",
+      "深層指壓",
+      "溫熱油壓",
+      "手法到位"
+    ],
+    "rating": 9.9,
+    "review_count": 39,
+    "photos": [
+      "static/masters/taipei/CV.JPG"
+    ]
+  },
+  {
+    "id": "tp_et",
+    "name": "ET",
+    "region": "台北/桃園",
+    "regions": [
+      "台北",
+      "桃園"
+    ],
+    "height": 176,
+    "weight": 66,
+    "age": 26,
+    "specialty": "體育生專精 / 運動深層指油壓",
+    "bio": "ET 師傅具備紮實體育運動背景，體態勻稱結實，手法剛柔並濟，擅長深層筋膜撥筋與經絡穴位放鬆。",
+    "tags": [
+      "體育生",
+      "深層指壓",
+      "溫熱油壓",
+      "手法到位"
+    ],
+    "rating": 9.9,
+    "review_count": 50,
+    "photos": [
+      "static/masters/taipei/ET.jpeg"
+    ]
+  },
+  {
+    "id": "tp_j",
+    "name": "J",
+    "region": "台北/桃園",
+    "regions": [
+      "台北",
+      "桃園"
+    ],
+    "height": 174,
+    "weight": 61,
+    "age": 27,
+    "specialty": "體育生專精 / 運動深層指油壓",
+    "bio": "J 師傅具備紮實體育運動背景，體態勻稱結實，手法剛柔並濟，擅長深層筋膜撥筋與經絡穴位放鬆。",
+    "tags": [
+      "體育生",
+      "深層指壓",
+      "溫熱油壓",
+      "手法到位"
+    ],
+    "rating": 9.9,
+    "review_count": 52,
+    "photos": [
+      "static/masters/taipei/J.jpeg"
+    ]
+  },
+  {
+    "id": "tp_jay",
+    "name": "Jay",
+    "region": "台北/桃園",
+    "regions": [
+      "台北",
+      "桃園"
+    ],
+    "height": 180,
+    "weight": 76,
+    "age": 27,
+    "specialty": "體育生專精 / 運動深層指油壓",
+    "bio": "Jay 師傅具備紮實體育運動背景，體態勻稱結實，手法剛柔並濟，擅長深層筋膜撥筋與經絡穴位放鬆。",
+    "tags": [
+      "體育生",
+      "深層指壓",
+      "溫熱油壓",
+      "手法到位"
+    ],
+    "rating": 9.9,
+    "review_count": 43,
+    "photos": [
+      "static/masters/taipei/Jay.jpg"
+    ]
+  },
+  {
+    "id": "tp_ki",
+    "name": "KI",
+    "region": "台北/桃園",
+    "regions": [
+      "台北",
+      "桃園"
+    ],
+    "height": 180,
+    "weight": 76,
+    "age": 27,
+    "specialty": "體育生專精 / 運動深層指油壓",
+    "bio": "KI 師傅具備紮實體育運動背景，體態勻稱結實，手法剛柔並濟，擅長深層筋膜撥筋與經絡穴位放鬆。",
+    "tags": [
+      "體育生",
+      "深層指壓",
+      "溫熱油壓",
+      "手法到位"
+    ],
+    "rating": 9.9,
+    "review_count": 37,
+    "photos": [
+      "static/masters/taipei/KI.jpg"
+    ]
+  },
+  {
+    "id": "tp_kn",
+    "name": "KN",
+    "region": "台北/桃園",
+    "regions": [
+      "台北",
+      "桃園"
+    ],
+    "height": 180,
+    "weight": 76,
+    "age": 27,
+    "specialty": "體育生專精 / 運動深層指油壓",
+    "bio": "KN 師傅具備紮實體育運動背景，體態勻稱結實，手法剛柔並濟，擅長深層筋膜撥筋與經絡穴位放鬆。",
+    "tags": [
+      "體育生",
+      "深層指壓",
+      "溫熱油壓",
+      "手法到位"
+    ],
+    "rating": 9.9,
+    "review_count": 47,
+    "photos": [
+      "static/masters/taipei/KN.JPG"
+    ]
+  },
+  {
+    "id": "tp_ln",
+    "name": "LN",
+    "region": "台北/桃園",
+    "regions": [
+      "台北",
+      "桃園"
+    ],
+    "height": 180,
+    "weight": 76,
+    "age": 27,
+    "specialty": "體育生專精 / 運動深層指油壓",
+    "bio": "LN 師傅具備紮實體育運動背景，體態勻稱結實，手法剛柔並濟，擅長深層筋膜撥筋與經絡穴位放鬆。",
+    "tags": [
+      "體育生",
+      "深層指壓",
+      "溫熱油壓",
+      "手法到位"
+    ],
+    "rating": 9.9,
+    "review_count": 50,
+    "photos": [
+      "static/masters/taipei/LN.jpeg"
+    ]
+  },
+  {
+    "id": "tp_lt",
+    "name": "LT",
+    "region": "台北/桃園",
+    "regions": [
+      "台北",
+      "桃園"
+    ],
+    "height": 180,
+    "weight": 76,
+    "age": 27,
+    "specialty": "體育生專精 / 運動深層指油壓",
+    "bio": "LT 師傅具備紮實體育運動背景，體態勻稱結實，手法剛柔並濟，擅長深層筋膜撥筋與經絡穴位放鬆。",
+    "tags": [
+      "體育生",
+      "深層指壓",
+      "溫熱油壓",
+      "手法到位"
+    ],
+    "rating": 9.9,
+    "review_count": 54,
+    "photos": [
+      "static/masters/taipei/LT.jpeg"
+    ]
+  },
+  {
+    "id": "tp_nick",
+    "name": "Nick",
+    "region": "台北/桃園",
+    "regions": [
+      "台北",
+      "桃園"
+    ],
+    "height": 177,
+    "weight": 70,
+    "age": 27,
+    "specialty": "體育生專精 / 運動深層指油壓",
+    "bio": "Nick 師傅具備紮實體育運動背景，體態勻稱結實，手法剛柔並濟，擅長深層筋膜撥筋與經絡穴位放鬆。",
+    "tags": [
+      "體育生",
+      "深層指壓",
+      "溫熱油壓",
+      "手法到位"
+    ],
+    "rating": 9.9,
+    "review_count": 52,
+    "photos": [
+      "static/masters/taipei/Nick.jpeg"
+    ]
+  },
+  {
+    "id": "tp_p",
+    "name": "P",
+    "region": "台北/桃園",
+    "regions": [
+      "台北",
+      "桃園"
+    ],
+    "height": 180,
+    "weight": 76,
+    "age": 27,
+    "specialty": "體育生專精 / 運動深層指油壓",
+    "bio": "P 師傅具備紮實體育運動背景，體態勻稱結實，手法剛柔並濟，擅長深層筋膜撥筋與經絡穴位放鬆。",
+    "tags": [
+      "體育生",
+      "深層指壓",
+      "溫熱油壓",
+      "手法到位"
+    ],
+    "rating": 9.9,
+    "review_count": 35,
+    "photos": [
+      "static/masters/taipei/P.jpg"
+    ]
+  },
+  {
+    "id": "tp_pa",
+    "name": "PA",
+    "region": "台北/桃園",
+    "regions": [
+      "台北",
+      "桃園"
+    ],
+    "height": 168,
+    "weight": 68,
+    "age": 26,
+    "specialty": "體育生專精 / 運動深層指油壓",
+    "bio": "PA 師傅具備紮實體育運動背景，體態勻稱結實，手法剛柔並濟，擅長深層筋膜撥筋與經絡穴位放鬆。",
+    "tags": [
+      "體育生",
+      "深層指壓",
+      "溫熱油壓",
+      "手法到位"
+    ],
+    "rating": 9.9,
+    "review_count": 32,
+    "photos": [
+      "static/masters/taipei/PA.jpeg"
+    ]
+  },
+  {
+    "id": "tp_ra",
+    "name": "RA",
+    "region": "台北/桃園",
+    "regions": [
+      "台北",
+      "桃園"
+    ],
+    "height": 180,
+    "weight": 76,
+    "age": 27,
+    "specialty": "體育生專精 / 運動深層指油壓",
+    "bio": "RA 師傅具備紮實體育運動背景，體態勻稱結實，手法剛柔並濟，擅長深層筋膜撥筋與經絡穴位放鬆。",
+    "tags": [
+      "體育生",
+      "深層指壓",
+      "溫熱油壓",
+      "手法到位"
+    ],
+    "rating": 9.9,
+    "review_count": 30,
+    "photos": [
+      "static/masters/taipei/RA.jpeg"
+    ]
+  },
+  {
+    "id": "tp_t",
+    "name": "T",
+    "region": "台北/桃園",
+    "regions": [
+      "台北",
+      "桃園"
+    ],
+    "height": 180,
+    "weight": 76,
+    "age": 27,
+    "specialty": "體育生專精 / 運動深層指油壓",
+    "bio": "T 師傅具備紮實體育運動背景，體態勻稱結實，手法剛柔並濟，擅長深層筋膜撥筋與經絡穴位放鬆。",
+    "tags": [
+      "體育生",
+      "深層指壓",
+      "溫熱油壓",
+      "手法到位"
+    ],
+    "rating": 9.9,
+    "review_count": 31,
+    "photos": [
+      "static/masters/taipei/T.jpeg"
+    ]
+  },
+  {
+    "id": "tp_wilson",
+    "name": "Wilson",
+    "region": "台北/桃園",
+    "regions": [
+      "台北",
+      "桃園"
+    ],
+    "height": 180,
+    "weight": 76,
+    "age": 27,
+    "specialty": "體育生專精 / 運動深層指油壓",
+    "bio": "Wilson 師傅具備紮實體育運動背景，體態勻稱結實，手法剛柔並濟，擅長深層筋膜撥筋與經絡穴位放鬆。",
+    "tags": [
+      "體育生",
+      "深層指壓",
+      "溫熱油壓",
+      "手法到位"
+    ],
+    "rating": 9.9,
+    "review_count": 35,
+    "photos": [
+      "static/masters/taipei/Wilson.JPG"
+    ]
+  },
+  {
+    "id": "tc_a",
+    "name": "A",
+    "region": "台中",
+    "regions": [
+      "台中"
+    ],
+    "height": 178,
+    "weight": 83,
+    "age": 28,
+    "specialty": "台中駐點王牌 / 大肌群伸展與精油調理",
+    "bio": "A 師傅為台中人氣常客指名師傅，手掌溫暖有力，對全身疲勞酸痛點掌握極為敏銳。",
+    "tags": [
+      "台中推薦",
+      "精壯體魄",
+      "肌肉伸展",
+      "細心沉穩"
+    ],
+    "rating": 9.9,
+    "review_count": 36,
+    "photos": [
+      "static/masters/taichung/A.jpeg"
+    ]
+  },
+  {
+    "id": "tc_ace",
+    "name": "ACE",
+    "region": "台中",
+    "regions": [
+      "台中"
+    ],
+    "height": 176,
+    "weight": 73,
+    "age": 28,
+    "specialty": "台中駐點王牌 / 大肌群伸展與精油調理",
+    "bio": "ACE 師傅為台中人氣常客指名師傅，手掌溫暖有力，對全身疲勞酸痛點掌握極為敏銳。",
+    "tags": [
+      "台中推薦",
+      "精壯體魄",
+      "肌肉伸展",
+      "細心沉穩"
+    ],
+    "rating": 9.9,
+    "review_count": 45,
+    "photos": [
+      "static/masters/taichung/ACE.JPG"
+    ]
+  },
+  {
+    "id": "tc_ak",
+    "name": "AK",
+    "region": "台中",
+    "regions": [
+      "台中"
+    ],
+    "height": 183,
+    "weight": 80,
+    "age": 28,
+    "specialty": "台中駐點王牌 / 大肌群伸展與精油調理",
+    "bio": "AK 師傅為台中人氣常客指名師傅，手掌溫暖有力，對全身疲勞酸痛點掌握極為敏銳。",
+    "tags": [
+      "台中推薦",
+      "精壯體魄",
+      "肌肉伸展",
+      "細心沉穩"
+    ],
+    "rating": 9.9,
+    "review_count": 51,
+    "photos": [
+      "static/masters/taichung/AK.jpeg"
+    ]
+  },
+  {
+    "id": "tc_j",
+    "name": "J (台中)",
+    "region": "台中",
+    "regions": [
+      "台中"
+    ],
+    "height": 174,
+    "weight": 61,
+    "age": 28,
+    "specialty": "台中駐點王牌 / 大肌群伸展與精油調理",
+    "bio": "J 師傅為台中人氣常客指名師傅，手掌溫暖有力，對全身疲勞酸痛點掌握極為敏銳。",
+    "tags": [
+      "台中推薦",
+      "精壯體魄",
+      "肌肉伸展",
+      "細心沉穩"
+    ],
+    "rating": 9.9,
+    "review_count": 34,
+    "photos": [
+      "static/masters/taichung/J.jpeg"
+    ]
+  },
+  {
+    "id": "tc_l",
+    "name": "L",
+    "region": "台中",
+    "regions": [
+      "台中"
+    ],
+    "height": 182,
+    "weight": 78,
+    "age": 28,
+    "specialty": "台中駐點王牌 / 大肌群伸展與精油調理",
+    "bio": "L 師傅為台中人氣常客指名師傅，手掌溫暖有力，對全身疲勞酸痛點掌握極為敏銳。",
+    "tags": [
+      "台中推薦",
+      "精壯體魄",
+      "肌肉伸展",
+      "細心沉穩"
+    ],
+    "rating": 9.9,
+    "review_count": 50,
+    "photos": [
+      "static/masters/taichung/L.jpeg"
+    ]
+  },
+  {
+    "id": "tc_lg",
+    "name": "LG",
+    "region": "台中",
+    "regions": [
+      "台中"
+    ],
+    "height": 182,
+    "weight": 78,
+    "age": 28,
+    "specialty": "台中駐點王牌 / 大肌群伸展與精油調理",
+    "bio": "LG 師傅為台中人氣常客指名師傅，手掌溫暖有力，對全身疲勞酸痛點掌握極為敏銳。",
+    "tags": [
+      "台中推薦",
+      "精壯體魄",
+      "肌肉伸展",
+      "細心沉穩"
+    ],
+    "rating": 9.9,
+    "review_count": 38,
+    "photos": [
+      "static/masters/taichung/LG.jpg"
+    ]
+  },
+  {
+    "id": "tc_n",
+    "name": "N",
+    "region": "台中",
+    "regions": [
+      "台中"
+    ],
+    "height": 176,
+    "weight": 79,
+    "age": 30,
+    "specialty": "台中駐點王牌 / 大肌群伸展與精油調理",
+    "bio": "N 師傅為台中人氣常客指名師傅，手掌溫暖有力，對全身疲勞酸痛點掌握極為敏銳。",
+    "tags": [
+      "台中推薦",
+      "精壯體魄",
+      "肌肉伸展",
+      "細心沉穩"
+    ],
+    "rating": 9.9,
+    "review_count": 37,
+    "photos": [
+      "static/masters/taichung/N.jpeg"
+    ]
+  },
+  {
+    "id": "tc_vt",
+    "name": "VT",
+    "region": "台中",
+    "regions": [
+      "台中"
+    ],
+    "height": 176,
+    "weight": 65,
+    "age": 28,
+    "specialty": "台中駐點王牌 / 大肌群伸展與精油調理",
+    "bio": "VT 師傅為台中人氣常客指名師傅，手掌溫暖有力，對全身疲勞酸痛點掌握極為敏銳。",
+    "tags": [
+      "台中推薦",
+      "精壯體魄",
+      "肌肉伸展",
+      "細心沉穩"
+    ],
+    "rating": 9.9,
+    "review_count": 47,
+    "photos": [
+      "static/masters/taichung/VT.JPG"
+    ]
+  },
+  {
+    "id": "kh_cheng",
+    "name": "Cheng",
+    "region": "高雄",
+    "regions": [
+      "高雄"
+    ],
+    "height": 180,
+    "weight": 80,
+    "age": 27,
+    "specialty": "南部核心陣容 / 深沉力道指油壓",
+    "bio": "Cheng 師傅為高雄熱門指名，體格陽光精實，力道穿透感極佳，深受重力道愛好者讚譽。",
+    "tags": [
+      "高雄首選",
+      "力道深沉",
+      "專業指油壓",
+      "滿分服務"
+    ],
+    "rating": 10.0,
+    "review_count": 47,
+    "photos": [
+      "static/masters/kaohsiung/Cheng.JPG"
+    ]
+  },
+  {
+    "id": "kh_q",
+    "name": "Q",
+    "region": "高雄",
+    "regions": [
+      "高雄"
+    ],
+    "height": 181,
+    "weight": 77,
+    "age": 27,
+    "specialty": "南部核心陣容 / 深沉力道指油壓",
+    "bio": "Q 師傅為高雄熱門指名，體格陽光精實，力道穿透感極佳，深受重力道愛好者讚譽。",
+    "tags": [
+      "高雄首選",
+      "力道深沉",
+      "專業指油壓",
+      "滿分服務"
+    ],
+    "rating": 10.0,
+    "review_count": 50,
+    "photos": [
+      "static/masters/kaohsiung/Q.JPG"
+    ]
+  },
+  {
+    "id": "kh_z",
+    "name": "Z",
+    "region": "高雄",
+    "regions": [
+      "高雄"
+    ],
+    "height": 181,
+    "weight": 77,
+    "age": 27,
+    "specialty": "南部核心陣容 / 深沉力道指油壓",
+    "bio": "Z 師傅為高雄熱門指名，體格陽光精實，力道穿透感極佳，深受重力道愛好者讚譽。",
+    "tags": [
+      "高雄首選",
+      "力道深沉",
+      "專業指油壓",
+      "滿分服務"
+    ],
+    "rating": 10.0,
+    "review_count": 46,
+    "photos": [
+      "static/masters/kaohsiung/Z.JPG"
+    ]
+  }
+]
