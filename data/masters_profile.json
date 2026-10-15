@@ -687,5 +687,55 @@
     "photos": [
       "static/masters/kaohsiung/Z.JPG"
     ]
+  },
+  {
+    "id": "tp_un",
+    "name": "UN",
+    "region": "台北/桃園",
+    "regions": [
+      "台北",
+      "桃園"
+    ],
+    "height": 184,
+    "weight": 87,
+    "age": 27,
+    "specialty": "體育生專精 / 壯碩精壯指油壓",
+    "bio": "UN 師傅身材高大厚實，體態極佳，擅長深層筋膜撥筋與經絡穴位放鬆，手法剛柔並濟、自在沉穩。",
+    "tags": [
+      "體育生",
+      "壯碩身材",
+      "深層指壓",
+      "同志友善"
+    ],
+    "rating": 9.9,
+    "review_count": 38,
+    "photos": [
+      "static/masters/taipei/UN.png"
+    ]
+  },
+  {
+    "id": "tp_wayne",
+    "name": "Wayne",
+    "region": "台北/桃園",
+    "regions": [
+      "台北",
+      "桃園"
+    ],
+    "height": 177,
+    "weight": 68,
+    "age": 21,
+    "specialty": "體育生專精 / 陽光肌肉線條指油壓",
+    "bio": "Wayne 師傅年輕有活力，具備清晰精緻腹肌線條，手法細膩到位，熱忱親切。",
+    "tags": [
+      "體育生",
+      "陽光帥氣",
+      "腹肌線條",
+      "深層指壓"
+    ],
+    "rating": 9.9,
+    "review_count": 32,
+    "photos": [
+      "static/masters/taipei/Wayne.jpg"
+    ]
   }
 ]
