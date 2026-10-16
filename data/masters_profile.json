@@ -729,5 +729,30 @@
     "photos": [
       "static/masters/taipei/Wayne.jpg"
     ]
+  },
+  {
+    "id": "tp_kd",
+    "name": "KD",
+    "region": "台北/桃園",
+    "regions": [
+      "台北",
+      "桃園"
+    ],
+    "height": 174,
+    "weight": 68,
+    "age": 28,
+    "specialty": "體育生專精 / 結實肌肉深層指油壓",
+    "bio": "KD 師傅五官精緻俊秀，體格結實精壯，肌肉線條分明，手法沉穩專注，擅長經絡舒緩與深層筋膜放鬆。",
+    "tags": [
+      "體育生",
+      "俊朗帥氣",
+      "結實線條",
+      "深層指壓"
+    ],
+    "rating": 9.9,
+    "review_count": 35,
+    "photos": [
+      "static/masters/taipei/KD.jpg"
+    ]
   }
 ]
