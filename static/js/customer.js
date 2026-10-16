@@ -27,7 +27,7 @@ async function fetchConfig() {
 // 2. 載入並渲染師傅清單
 async function loadMasters() {
   try {
-    const res = await fetch('data/masters_profile.json?v=20261014');
+    const res = await fetch('data/masters_profile.json?v=' + Date.now());
     const masters = await res.json();
     if (masters && Array.isArray(masters)) {
       globalMasters = masters;
