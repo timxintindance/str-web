@@ -92,9 +92,9 @@ function renderMasters(masters) {
 
             <!-- 身材數據標籤 -->
             <div class="flex flex-wrap gap-1 mb-1">
-              <span class="text-[10px] bg-slate-800 text-gray-300 px-2 py-0.5 rounded-md border border-slate-700">身高 ${m.height || 180}cm</span>
-              <span class="text-[10px] bg-slate-800 text-gray-300 px-2 py-0.5 rounded-md border border-slate-700">體重 ${m.weight || 75}kg</span>
-              <span class="text-[10px] bg-slate-800 text-gray-300 px-2 py-0.5 rounded-md border border-slate-700">${m.age || 27}歲</span>
+              ${m.height ? `<span class="text-[10px] bg-slate-800 text-gray-300 px-2 py-0.5 rounded-md border border-slate-700">身高 ${m.height}cm</span>` : ''}
+              ${m.weight ? `<span class="text-[10px] bg-slate-800 text-gray-300 px-2 py-0.5 rounded-md border border-slate-700">體重 ${m.weight}kg</span>` : ''}
+              ${m.age ? `<span class="text-[10px] bg-slate-800 text-gray-300 px-2 py-0.5 rounded-md border border-slate-700">${m.age}歲</span>` : ''}
             </div>
           </div>
 
