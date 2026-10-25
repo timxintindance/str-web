@@ -80,6 +80,52 @@
       </div>
     </section>
 
+    <!-- ════════════════════════════════════════════════════════════
+         SECTION 1.5：工作室環境圖 (Studio Environment Gallery)
+         ════════════════════════════════════════════════════════════ -->
+    <section id="environment-section" class="space-y-4 pt-2">
+      <div class="flex items-center justify-between">
+        <div>
+          <h3 class="text-lg font-bold text-white tracking-wide flex items-center gap-2">
+            <span class="w-2 h-5 rounded-full bg-amber-500 inline-block"></span>
+            工作室環境圖
+          </h3>
+          <p class="text-xs text-gray-400 mt-0.5">極致隱私 · 獨立衛浴 · 專業舒壓環境</p>
+        </div>
+      </div>
+
+      <!-- 環境圖網格 (點擊放大) -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+        <div class="glass-card overflow-hidden rounded-2xl group cursor-pointer aspect-[3/4] relative bg-slate-950" onclick="openLightbox(encodeURIComponent(JSON.stringify(['static/environment/env1.jpg','static/environment/env2.jpg','static/environment/env3.jpg','static/environment/env4.jpg'])), 0)">
+          <img src="static/environment/env1.jpg" alt="工作室環境" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-3">
+            <span class="text-xs font-bold text-white flex items-center gap-1.5"><i class="fas fa-search-plus text-amber-400 text-[10px]"></i> 按摩放鬆室</span>
+          </div>
+        </div>
+
+        <div class="glass-card overflow-hidden rounded-2xl group cursor-pointer aspect-[3/4] relative bg-slate-950" onclick="openLightbox(encodeURIComponent(JSON.stringify(['static/environment/env1.jpg','static/environment/env2.jpg','static/environment/env3.jpg','static/environment/env4.jpg'])), 1)">
+          <img src="static/environment/env2.jpg" alt="工作室環境" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-3">
+            <span class="text-xs font-bold text-white flex items-center gap-1.5"><i class="fas fa-search-plus text-amber-400 text-[10px]"></i> 獨立衛浴設施</span>
+          </div>
+        </div>
+
+        <div class="glass-card overflow-hidden rounded-2xl group cursor-pointer aspect-[3/4] relative bg-slate-950" onclick="openLightbox(encodeURIComponent(JSON.stringify(['static/environment/env1.jpg','static/environment/env2.jpg','static/environment/env3.jpg','static/environment/env4.jpg'])), 2)">
+          <img src="static/environment/env3.jpg" alt="工作室環境" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-3">
+            <span class="text-xs font-bold text-white flex items-center gap-1.5"><i class="fas fa-search-plus text-amber-400 text-[10px]"></i> 沐浴舒壓空間</span>
+          </div>
+        </div>
+
+        <div class="glass-card overflow-hidden rounded-2xl group cursor-pointer aspect-[3/4] relative bg-slate-950" onclick="openLightbox(encodeURIComponent(JSON.stringify(['static/environment/env1.jpg','static/environment/env2.jpg','static/environment/env3.jpg','static/environment/env4.jpg'])), 3)">
+          <img src="static/environment/env4.jpg" alt="工作室環境" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-3">
+            <span class="text-xs font-bold text-white flex items-center gap-1.5"><i class="fas fa-search-plus text-amber-400 text-[10px]"></i> 專屬舒壓空間</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
 
     <!-- ════════════════════════════════════════════════════════════
          SECTION 2：Muscle.com.tw 筋棧 3-STEP 預約排程系統
@@ -424,6 +470,6 @@
   </footer>
 
   <!-- Frontend Logic -->
-  <script src="static/js/customer.js?v=20261016_02"></script>
+  <script src="static/js/customer.js?v=20261025_01"></script>
 </body>
 </html>
