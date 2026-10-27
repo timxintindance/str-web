@@ -179,9 +179,6 @@ window.onLocationChange = function() {
   } else if (chosen === '西門工作室') {
     studioFee = 400;
     if (customBox) customBox.classList.add('hidden');
-  } else if (chosen === '台中工作室') {
-    studioFee = 300;
-    if (customBox) customBox.classList.add('hidden');
   }
   calculatePrice();
   buildPreviewText();
@@ -448,9 +445,7 @@ function buildPreviewText() {
   for (let r of locRadios) {
     if (r.checked) locType = r.value;
   }
-  if (locType === '台中工作室') {
-    locationText = '台中工作室';
-  } else if (locType === '外出到府') {
+  if (locType === '外出到府') {
     const customAddr = document.getElementById('custom-address-input')?.value.trim();
     locationText = customAddr ? `外出服務 (${customAddr})` : '外出服務 (待專人確認地址)';
   } else {
@@ -543,8 +538,7 @@ window.submitBookingToLine = function(event) {
   const locRadios = document.getElementsByName('location-type');
   for (let r of locRadios) {
     if (r.checked) {
-      if (r.value === '台中工作室') locationText = '台中工作室';
-      else if (r.value === '外出到府') {
+      if (r.value === '外出到府') {
         const addr = document.getElementById('custom-address-input')?.value.trim();
         locationText = addr ? `外出服務 (${addr})` : '外出服務';
       }
