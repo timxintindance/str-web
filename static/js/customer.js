@@ -380,7 +380,7 @@ async function loadSlotsForDate(dateStr) {
       box.innerHTML = `
         <span class="block text-xs font-mono font-bold tracking-wider">${s.time}</span>
         <span class="block text-[9px] mt-0.5 ${isLocked ? 'text-gray-500' : isSelected ? 'text-white' : 'text-blue-400'}">
-          ${isLocked ? '已約滿' : isSelected ? '已選中' : '可預約'}
+          ${isLocked ? '已約滿' : isSelected ? '已選中' : ''}
         </span>
       `;
 
@@ -391,7 +391,7 @@ async function loadSlotsForDate(dateStr) {
             const subText = sb.querySelector('span:last-child');
             if (subText && !sb.classList.contains('locked')) {
               subText.className = 'block text-[9px] mt-0.5 text-blue-400';
-              subText.innerText = '可預約';
+              subText.innerText = '';
             }
           });
           box.classList.add('active');
