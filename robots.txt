@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://str.ohbaspa.com.tw/sitemap.xml
