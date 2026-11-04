@@ -55,8 +55,8 @@ function renderMasters(masters) {
     let imagesHtml = '';
     photos.forEach((pic, pIdx) => {
       imagesHtml += `
-        <div class="relative w-full h-full flex-shrink-0 snap-center cursor-pointer bg-slate-950" onclick="openLightbox('${picsJson}', ${pIdx})">
-          <img src="${pic}" class="w-full h-full object-cover object-center transition-transform duration-500 hover:scale-105" alt="${m.name}">
+        <div class="relative w-full h-full flex-shrink-0 snap-center cursor-pointer bg-slate-950" onclick="openLightbox('${picsJson}', ${pIdx}, '男師傅 ${m.name}')">
+          <img src="${pic}" class="w-full h-full object-cover object-center transition-transform duration-500 hover:scale-105" alt="男師傅 ${m.name}">
         </div>
       `;
     });
@@ -579,7 +579,7 @@ window.closeLineRedirectModal = function() {
 let currentLightboxPics = [];
 let currentLightboxIdx = 0;
 
-window.openLightbox = function(picsJson, startIndex) {
+window.openLightbox = function(picsJson, startIndex, altText) {
   currentLightboxPics = JSON.parse(decodeURIComponent(picsJson));
   currentLightboxIdx = startIndex;
   const modal = document.getElementById('lightbox-modal');
@@ -587,6 +587,7 @@ window.openLightbox = function(picsJson, startIndex) {
   const dots = document.getElementById('lightbox-dots');
 
   img.src = currentLightboxPics[startIndex];
+  img.alt = altText || '';
   dots.innerHTML = '';
   currentLightboxPics.forEach((_, i) => {
     dots.innerHTML += `<div class="dot ${i === startIndex ? 'active' : ''}"></div>`;
