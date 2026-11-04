@@ -200,7 +200,7 @@
               <i class="fas fa-clock text-blue-400"></i> 選擇時間
             </h4>
             <span id="selected-service-badge" class="text-xs bg-slate-800 text-blue-300 border border-blue-500/30 px-3 py-1 rounded-full font-bold">
-              100分鐘 · NT$ 3,200
+              100分鐘 · NT$ 2,800
             </span>
           </div>
 
@@ -237,7 +237,7 @@
             <div class="space-y-2">
               <label class="flex items-center justify-between bg-slate-900 border border-slate-700 rounded-xl p-3 cursor-pointer hover:border-slate-600 transition-all">
                 <div class="flex items-center gap-2.5">
-                  <input type="radio" name="location-type" value="西門工作室" checked onchange="onLocationChange()" class="w-4 h-4 text-blue-600">
+                  <input type="radio" name="location-type" value="西門工作室" onchange="onLocationChange()" class="w-4 h-4 text-blue-600">
                   <div>
                     <span class="text-xs font-bold text-white">台北西門工作室</span>
                     <p class="text-[10px] text-gray-400">萬華區峨眉街82號附近 · 清潔費 +$400</p>
@@ -248,10 +248,10 @@
 
               <label class="flex items-center justify-between bg-slate-900 border border-slate-700 rounded-xl p-3 cursor-pointer hover:border-slate-600 transition-all">
                 <div class="flex items-center gap-2.5">
-                  <input type="radio" name="location-type" value="外出到府" onchange="onLocationChange()" class="w-4 h-4 text-blue-600">
+                  <input type="radio" name="location-type" value="外出到府" checked onchange="onLocationChange()" class="w-4 h-4 text-blue-600">
                   <div>
                     <span class="text-xs font-bold text-white">外出服務 (住家 / 飯店)</span>
-                    <p class="text-[10px] text-gray-400"><span class="text-red-500">西門捷運站起算 >7km</span> 每公里 $100</p>
+                    <p class="text-[10px] text-red-500">西門捷運站起算 >7km 每公里 $100</p>
                   </div>
                 </div>
                 <span class="text-xs font-bold text-gray-400">車馬費另計</span>
@@ -259,7 +259,7 @@
             </div>
 
             <!-- 外出詳細地址填寫框 -->
-            <div id="custom-address-box" class="hidden mt-2">
+            <div id="custom-address-box" class="mt-2">
               <label class="block text-[11px] font-bold text-blue-400 mb-1">
                 <i class="fas fa-home mr-1"></i> 請填寫完整外出地址（住家或飯店房號）*
               </label>
@@ -298,7 +298,7 @@
             </div>
             <div class="flex justify-between text-gray-300 pt-2 border-t border-white/5 text-sm font-bold">
               <span>預估金額</span>
-              <span id="sum-total-price" class="text-amber-400">NT$ 3,200</span>
+              <span id="sum-total-price" class="text-amber-400">NT$ 2,800</span>
             </div>
           </div>
 
@@ -382,7 +382,7 @@
             </div>
             <div class="flex justify-between text-gray-300 pt-1.5 border-t border-white/5 font-bold">
               <span>預估金額</span>
-              <span id="final-sum-price" class="text-amber-400">NT$ 3,200</span>
+              <span id="final-sum-price" class="text-amber-400">NT$ 2,800</span>
             </div>
           </div>
         </div>
@@ -458,6 +458,6 @@
   </footer>
 
   <!-- Frontend Logic -->
-  <script src="static/js/customer.js?v=20261027_01"></script>
+  <script src="static/js/customer.js?v=20261104_01"></script>
 </body>
 </html>

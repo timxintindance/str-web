@@ -10,13 +10,13 @@ let lineBotId = '@960wphcq';
 // 價格定義
 const BASE_PRICE = 2800; // 100min
 const ADDON_TIME_PRICE = 600; // +30min
-let studioFee = 400; // 西門預設
+let studioFee = 0; // 外出服務預設，不含西門工作室清潔費
 
 document.addEventListener('DOMContentLoaded', async () => {
   await fetchConfig();
   await loadMasters();
   initDateList();
-  calculatePrice();
+  onLocationChange();
 });
 
 // 1. 取得全域配置
@@ -168,7 +168,7 @@ function onMasterSelected() {
 // 地點切換
 window.onLocationChange = function() {
   const locRadios = document.getElementsByName('location-type');
-  let chosen = '西門工作室';
+  let chosen = '外出到府';
   for (let r of locRadios) {
     if (r.checked) chosen = r.value;
   }
@@ -439,8 +439,8 @@ function buildPreviewText() {
   const notes = (document.getElementById('cust-notes')?.value || '').trim() || '無';
   const custName = (document.getElementById('cust-name')?.value || '').trim();
 
-  let locationText = '台北西門工作室';
-  let locType = '西門工作室';
+  let locationText = '外出服務 (待專人確認地址)';
+  let locType = '外出到府';
   const locRadios = document.getElementsByName('location-type');
   for (let r of locRadios) {
     if (r.checked) locType = r.value;
@@ -534,13 +534,15 @@ window.submitBookingToLine = function(event) {
   const notes = (document.getElementById('cust-notes')?.value || '').trim();
   const custName = (document.getElementById('cust-name')?.value || '').trim();
 
-  let locationText = '台北西門工作室';
+  let locationText = '外出服務';
   const locRadios = document.getElementsByName('location-type');
   for (let r of locRadios) {
     if (r.checked) {
       if (r.value === '外出到府') {
         const addr = document.getElementById('custom-address-input')?.value.trim();
         locationText = addr ? `外出服務 (${addr})` : '外出服務';
+      } else if (r.value === '西門工作室') {
+        locationText = '台北西門工作室';
       }
     }
   }
