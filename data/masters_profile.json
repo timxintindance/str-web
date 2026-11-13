@@ -754,5 +754,30 @@
     "photos": [
       "static/masters/taipei/KD.jpg"
     ]
+  },
+  {
+    "id": "tp_nc",
+    "name": "NC",
+    "region": "台北/桃園",
+    "regions": [
+      "台北",
+      "桃園"
+    ],
+    "height": 172,
+    "weight": 67,
+    "age": 19,
+    "specialty": "體育生專精 / 運動深層指油壓",
+    "bio": "NC 師傅年輕有活力，體態勻稱結實，手法剛柔並濟，擅長深層筋膜放鬆與經絡舒緩指油壓。",
+    "tags": [
+      "體育生",
+      "年輕活力",
+      "深層指壓",
+      "溫熱油壓"
+    ],
+    "rating": 9.9,
+    "review_count": 36,
+    "photos": [
+      "static/masters/taipei/NC.jpg"
+    ]
   }
 ]

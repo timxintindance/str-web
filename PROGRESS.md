@@ -15,9 +15,9 @@
   * 7 行標準 LINE 預約代碼自動組裝與一鍵跳轉官方 LINE。
 * `data/masters_profile.json`：全體按摩師傅資料庫。
   * 記錄師傅 ID、姓名、服務分區（`regions`）、身高、體重、年齡、專長、個人簡介、評分、標籤與相片路徑。
-  * 目前前台正式上架 **31 位師傅**（台北 20 位、台中 8 位、高雄 3 位）。
+  * 目前前台正式上架 **32 位師傅**（台北 21 位、台中 8 位、高雄 3 位）。
 * `static/masters/`：師傅個人寫真照目錄。
-  * `taipei/`：台北/桃園師傅照片（含 UN、Wayne、KD 等）。
+  * `taipei/`：台北/桃園師傅照片（含 UN、Wayne、KD、NC 等）。
   * `taichung/`：台中師傅照片（A、ACE、AK、J、L、LG、N、VT）。
   * `kaohsiung/`：高雄師傅照片（Cheng、Q、Z）。
 * `static/environment/`：西門旗艦會館環境實景寫真（`env1.jpg` ~ `env4.jpg`）。
@@ -29,6 +29,20 @@
 ---
 
 ## 工作進度日誌（最新進度置頂）
+
+### [2026-11-13 11:45] · 上架新師傅 NC（台北/桃園）
+* **執行 Agent**：Antigravity（電腦端）
+* **本次改動內容**：
+  1. 取得並匯入雲端相片：從 `I:\我的雲端硬碟\後台端\男客\台北師傅\NC\NC_172_67_19.jpg` 同步至 `static/masters/taipei/NC.jpg`。
+  2. 新增師傅資料：於 `data/masters_profile.json` 新增師傅「NC」（身高 172cm / 體重 67kg / 年齡 19 歲 / 台北桃園專區 / 評分 9.9）。
+  3. 前台師傅總數更新為 32 位（台北 21 位、台中 8 位、高雄 3 位）。
+* **異動檔案**：
+  - `static/masters/taipei/NC.jpg` (新增)
+  - `data/masters_profile.json` (修改)
+  - `PROGRESS.md` (更新)
+* **當前狀態與下一步待辦（Next Steps）**：
+  - 師傅「NC」已成功上架前台。
+  - **待辦事項**：師傅「FR (Frank / FR)」在內部排班系統已將分區改為「高雄」，目前因尚未取得相片未在前台公開；待使用者提供照片與相關體態數據後，即可在 `data/masters_profile.json` 與前台新增上架至高雄專區。
 
 ### [2026-11-13] · 建立協作機制完成，專案待命開發中
 * **執行 Agent**：Antigravity（電腦端）
