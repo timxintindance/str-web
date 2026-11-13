@@ -779,5 +779,30 @@
     "photos": [
       "static/masters/taipei/NC.jpg"
     ]
+  },
+  {
+    "id": "tp_ke",
+    "name": "KE",
+    "region": "台北/桃園",
+    "regions": [
+      "台北",
+      "桃園"
+    ],
+    "height": 177,
+    "weight": 70,
+    "age": 28,
+    "specialty": "體育生專精 / 運動深層指油壓",
+    "bio": "KE 師傅具備紮實體育運動背景，體態勻稱結實，手法剛柔並濟，擅長深層筋膜撥筋與經絡穴位放鬆。",
+    "tags": [
+      "體育生",
+      "深層指壓",
+      "溫熱油壓",
+      "手法到位"
+    ],
+    "rating": 9.9,
+    "review_count": 38,
+    "photos": [
+      "static/masters/taipei/KE.jpg"
+    ]
   }
 ]
